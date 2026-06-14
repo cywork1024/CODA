@@ -231,7 +231,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Account\" />
+    <Folder Include="Admin\" />
     <Folder Include="App_Data\" />
+    <Folder Include="Images\" />
+    <Folder Include="Instructor\" />
+    <Folder Include="Management\" />
+    <Folder Include="Public\" />
+    <Folder Include="Student\" />
+    <Folder Include="Uploads\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
