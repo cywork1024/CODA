@@ -325,4 +325,56 @@
 
     </section>
 
+    <section class="section event-section">
+
+        <div class="section-heading">
+            <span class="section-tag">Events & Workshops</span>
+
+            <h2>Join CODA Learning Events</h2>
+
+            <p>
+                Live events, workshops, and talks created by management or approved
+                instructors will be displayed here once available.
+            </p>
+        </div>
+
+        <div class="event-grid">
+
+            <div class="event-card">
+                <div class="event-icon">📅</div>
+                <h3>Event Coming Soon</h3>
+                <p class="event-meta">Created by Management / Approved Instructor</p>
+                <p>
+                    Upcoming Python talks, coding workshops, and learning programs
+                    will appear here.
+                </p>
+                <a href="/Public/Events.aspx" class="btn-secondary">View Events</a>
+            </div>
+
+            <div class="event-card">
+                <div class="event-icon">🎤</div>
+                <h3>Workshop Coming Soon</h3>
+                <p class="event-meta">Registration will be available later</p>
+                <p>
+                    Students will be able to view event details and register for
+                    available sessions.
+                </p>
+                <a href="/Public/Events.aspx" class="btn-secondary">View Events</a>
+            </div>
+
+            <div class="event-card">
+                <div class="event-icon">💻</div>
+                <h3>Python Talk Coming Soon</h3>
+                <p class="event-meta">Online / Physical / Hybrid</p>
+                <p>
+                    Talks and programs related to Python learning will be shown here
+                    when published.
+                </p>
+                <a href="/Public/Events.aspx" class="btn-secondary">View Events</a>
+            </div>
+
+        </div>
+
+    </section>
+
 </asp:Content>

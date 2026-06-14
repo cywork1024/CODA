@@ -888,6 +888,55 @@ body {
 }
 
 /* =======================
+    Home Page - Events Preview Section
+========================== */
+
+.event-section {
+    background: radial-gradient( circle at 85% 35%, rgba(37, 99, 235, 0.14), transparent 28% ), var(--bg-dark);
+}
+
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.event-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-glow);
+    border-radius: 22px;
+    padding: 30px;
+    box-shadow: 0 0 30px rgba(124, 58, 237, 0.18);
+    transition: all 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 12px rgba(96, 165, 250, 0.4), 0 0 25px rgba(96, 165, 250, 0.3), 0 0 40px rgba(96, 165, 250, 0.2);
+}
+
+.event-icon {
+    font-size: 42px;
+    margin-bottom: 18px;
+}
+
+.event-card h3 {
+    color: var(--purple-light);
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.event-meta {
+    color: var(--blue-light);
+    font-weight: 700;
+}
+
+.event-card p {
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+/* =======================
     Home Page - Footer Section
 ========================== */
 footer {
@@ -986,6 +1035,10 @@ textarea {
     }
 
     .instructor-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .event-grid {
         grid-template-columns: 1fr;
     }
 }
