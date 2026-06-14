@@ -282,4 +282,47 @@
 
     </section>
 
+    <section class="section instructor-section">
+
+        <div class="section-heading">
+            <span class="section-tag">Featured Instructors</span>
+            <h2>Learn From Approved CODA Instructors</h2>
+            <p>
+                Instructor profiles will be displayed here after management approval
+                and student ratings are available.
+            </p>
+        </div>
+
+        <div class="instructor-scroll">
+            <div class="instructor-grid">
+
+                <div class="instructor-card">
+                    <div class="instructor-placeholder">👨‍🏫</div>
+                    <h3>Instructor Profile Coming Soon</h3>
+                    <p class="instructor-role">Python Instructor</p>
+                    <p class="instructor-exp">Pending management approval</p>
+                    <p class="instructor-rating">Rating will appear here</p>
+                </div>
+
+                <div class="instructor-card">
+                    <div class="instructor-placeholder">👩‍💻</div>
+                    <h3>Instructor Profile Coming Soon</h3>
+                    <p class="instructor-role">Python Instructor</p>
+                    <p class="instructor-exp">Pending management approval</p>
+                    <p class="instructor-rating">Rating will appear here</p>
+                </div>
+
+                <div class="instructor-card">
+                    <div class="instructor-placeholder">👨‍💻</div>
+                    <h3>Instructor Profile Coming Soon</h3>
+                    <p class="instructor-role">Python Instructor</p>
+                    <p class="instructor-exp">Pending management approval</p>
+                    <p class="instructor-rating">Rating will appear here</p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
 </asp:Content>

@@ -30,6 +30,7 @@ body {
     background: var(--bg-dark);
     color: var(--text-main);
     font-family: 'Segoe UI Emoji', sans-serif;
+    overflow-x: hidden;
 }
 
 /* Main Content Container */
@@ -781,6 +782,112 @@ body {
 }
 
 /* =======================
+    Home Page - Instructor Preview Section
+========================== */
+
+.instructor-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    background: 
+        radial-gradient( 
+            circle at 15% 30%, 
+            rgba(96, 165, 250, 0.14), 
+            transparent 28% 
+        ), 
+        var(--bg-dark);
+}
+
+/* Individual horizontal scroll only for instructor cards */
+.instructor-scroll {
+    max-width: 1180px;
+    margin: 0 auto;
+    overflow-x: auto;
+    overflow-y: visible;
+    padding: 35px 0 24px 0;
+}
+
+/* Card row */
+.instructor-grid {
+    display: flex;
+    gap: 28px;
+    width: max-content;
+    padding: 0 10px;
+}
+
+.instructor-card {
+    width: 260px;
+    min-height: 300px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-glow);
+    border-radius: 22px;
+    padding: 24px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 30px rgba(124, 58, 237, 0.18);
+    flex-shrink: 0;
+}
+
+.instructor-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 
+        0 0 12px rgba(96, 165, 250, 0.4), 
+        0 0 25px rgba(96, 165, 250, 0.3), 
+        0 0 40px rgba(96, 165, 250, 0.2);
+}
+
+.instructor-placeholder {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto 16px auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 44px;
+    border: 2px solid var(--purple-light);
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.35);
+}
+
+.instructor-card h3 {
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.instructor-role {
+    color: var(--purple-light);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.instructor-exp {
+    color: var(--text-muted);
+    font-size: 13px;
+}
+
+.instructor-rating {
+    color: #f59e0b;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.instructor-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+
+.instructor-scroll::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.05);
+    border-radius: 999px;
+}
+
+.instructor-scroll::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, var(--purple), var(--blue));
+    border-radius: 999px;
+}
+
+/* =======================
     Home Page - Footer Section
 ========================== */
 footer {
@@ -876,5 +983,9 @@ textarea {
 
     .journey-arrow {
         transform: rotate(90deg);
+    }
+
+    .instructor-grid {
+        grid-template-columns: 1fr;
     }
 }
