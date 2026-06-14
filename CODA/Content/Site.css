@@ -306,6 +306,7 @@ body {
     padding: 32px;
     border-radius: 24px;
     box-shadow: 0 0 30px rgba(124, 58, 237, 0.16);
+    transition: all 0.3s ease;
 }
 
 /* Feature icon */
@@ -330,7 +331,6 @@ body {
 /* Feature hover effect */
 .feature-card:hover {
     transform: translateY(-6px);
-    transition: 0.3s ease;
     box-shadow: 0 0 42px rgba(96, 165, 250, 0.35);
 }
 
@@ -414,6 +414,8 @@ body {
         0 0 30px rgba(124, 58, 237, 0.18);
 
     color: #e5e7eb;
+
+    transition: all 0.3s ease;
 }
 
 .level-card:nth-child(1) {
@@ -432,10 +434,80 @@ body {
     border: 1px solid #f59e0b;
 }
 
-/* Card Hover Animation */
-.info-card:hover,
-.price-card:hover {
-    transition: all 0.3s ease;
+.price-card ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 22px;
+}
+
+.price-card li {
+    color: var(--text-muted);
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.price-card.featured {
+    transform: scale(1.06);
+    border: 2px solid var(--purple-light);
+    box-shadow: 0 0 35px rgba(168, 85, 247, 0.45);
+}
+
+.plan-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--purple), var(--blue));
+    color: white;
+    font-size: 13px;
+    font-weight: 800;
+    padding: 6px 12px;
+    border-radius: 999px;
+    margin-bottom: 16px;
+}
+
+/* Basic Plan Border Color */
+.price-card:nth-child(1) {
+    border-color: #9ca3af;
+}
+
+/* Standard Plan Border Color */
+.price-card:nth-child(2) {
+    border-color: #a855f7;
+}
+
+/* Premium Plan Border Color */
+.price-card:nth-child(3) {
+    border-color: #f59e0b;
+}
+
+/* Basic Plan Hover Effect */
+.price-card:nth-child(1):hover {
+    transform: translateY(-6px);
+
+    box-shadow: 
+        0 0 12px rgba(156, 163, 175, 0.4), 
+        0 0 25px rgba(156, 163, 175, 0.3), 
+        0 0 40px rgba(156, 163, 175, 0.2);
+}
+
+/* Standard Plan Hover Effect */
+.price-card:nth-child(2):hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 0 12px rgba(168, 85, 247, 0.5), 
+        0 0 25px rgba(168, 85, 247, 0.4), 
+        0 0 45px rgba(168, 85, 247, 0.3);
+}
+
+.price-card.featured:hover {
+    transform: translateY(-6px) scale(1.06);
+}
+
+/* Premium Plan Hover Effect */
+.price-card:nth-child(3):hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 0 12px rgba(245, 158, 11, 0.5), 
+        0 0 25px rgba(245, 158, 11, 0.4), 
+        0 0 45px rgba(245, 158, 11, 0.3);
 }
 
 /* Rookie Hover Glow Effect */
@@ -502,6 +574,126 @@ body {
 }
 
 /*  =======================
+    Home Page - Subscription Plan Comparison Table
+    =======================  */
+
+.plan-compare {
+    margin: 55px auto 0 auto;
+    max-width: 1100px;
+}
+
+/* Long rectangle button */
+.plan-compare summary {
+    list-style: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 20px 28px;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+    color: white;
+    border-radius: 16px;
+    border: 1px solid var(--border-glow);
+    background: linear-gradient( 135deg, rgba(139, 92, 246, 0.28), rgba(37, 99, 235, 0.22) );
+    box-shadow: 0 0 25px rgba(124, 58, 237, 0.25);
+    transition: all 0.3s ease;
+}
+
+/* Remove default arrow in Chrome */
+.plan-compare summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Hover effect */
+.plan-compare summary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 35px rgba(96, 165, 250, 0.38);
+    color: var(--purple-light);
+}
+
+/* Add custom arrow text */
+.plan-compare summary::after {
+    content: "  ↓";
+    color: var(--blue-light);
+}
+
+/* Change arrow when expanded */
+.plan-compare[open] summary::after {
+    content: "  ↑";
+}
+
+/* Table container */
+.compare-table-wrapper {
+    margin-top: 26px;
+    overflow-x: auto;
+    background: var(--bg-card);
+    border: 1px solid var(--border-glow);
+    border-radius: 22px;
+    box-shadow: 0 0 35px rgba(124, 58, 237, 0.22);
+    animation: fadeIn 0.3s ease;
+}
+
+/* Table */
+.compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 720px;
+}
+
+/* Header cells */
+.compare-table th {
+    padding: 22px;
+    text-align: center;
+    color: white;
+    background: rgba(139, 92, 246, 0.18);
+    border-bottom: 1px solid rgba(168, 85, 247, 0.25);
+}
+
+/* Body cells */
+.compare-table td {
+    padding: 20px;
+    text-align: center;
+    color: var(--text-muted);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Feature name column */
+.compare-table td:first-child,
+.compare-table th:first-child {
+    text-align: left;
+    font-weight: 700;
+}
+
+/* Tick */
+.compare-table .yes {
+    color: #22c55e;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+/* Cross */
+.compare-table .no {
+    color: #ef4444;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+/* Remove last row border */
+.compare-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.compare-table th:nth-child(3),
+.compare-table td:nth-child(3) {
+    background: rgba(168, 85, 247, 0.08);
+}
+
+.compare-table tbody tr:hover {
+    background: rgba(255,255,255,0.03);
+}
+
+/*  =======================
     Home Page - Footer Section
     =======================  */
 footer {
@@ -522,6 +714,19 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+/* Fade-in animation for expandable comparison table */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /*  =======================
@@ -568,5 +773,13 @@ textarea {
 
     .section {
         padding: 60px 28px;
+    }
+
+    .price-card.featured {
+        transform: none;
+    }
+
+    .price-card.featured:hover {
+        transform: translateY(-6px);
     }
 }

@@ -102,21 +102,126 @@
             <div class="price-card">
                 <h3>Basic</h3>
                 <h2>RM19/month</h2>
-                <p>Access assigned level materials, quizzes, assignments, and progress tracking.</p>
+
+                <ul>
+                    <li>✓ Access assigned learning level</li>
+                    <li>✓ Course materials and notes</li>
+                    <li>✓ Quizzes and assessments</li>
+                    <li>✓ Progress tracking</li>
+                    <li>✓ Placement test</li>
+
+                    <li>✗ AI Python Assistant</li>
+                    <li>✗ Instructor messaging</li>
+                    <li>✗ Class booking</li>
+                    <li>✗ Priority events</li>
+                </ul>
             </div>
 
-            <div class="price-card">
+            <div class="price-card featured">
+                <span class="plan-badge">MOST POPULAR</span>
                 <h3>Standard</h3>
                 <h2>RM29/month</h2>
-                <p>Includes previous completed levels and instructor messaging.</p>
+                <ul>
+                    <li>✓ Access assigned level</li>
+                    <li>✓ Access previous completed levels</li>
+                    <li>✓ Quizzes and assignments</li>
+                    <li>✓ Progress tracking</li>
+                    <li>✓ Instructor messaging</li>
+                </ul>
             </div>
 
             <div class="price-card">
                 <h3>Premium</h3>
                 <h2>RM49/month</h2>
-                <p>Includes all features, class booking, priority events, and certificate eligibility.</p>
+
+                <ul>
+                    <li>✓ Everything in Standard</li>
+                    <li>✓ Priority instructor booking</li>
+                    <li>✓ Additional consultation sessions</li>
+                    <li>✓ Exclusive workshops and events</li>
+                    <li>✓ Priority event registration</li>
+                    <li>✓ Advanced learning analytics</li>
+                    <li>✓ Certificate eligibility upon LV4 completion</li>
+                    <li>✓ Early access to new learning content</li>
+                </ul>
             </div>
         </div>
+
+        <details class="plan-compare">
+            <summary>Compare Plans</summary>
+
+            <div class="compare-table-wrapper">
+                <table class="compare-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Basic</th>
+                            <th>Standard</th>
+                            <th>Premium</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Placement Test</td>
+                            <td class="yes">✓</td>
+                            <td class="yes">✓</td>
+                            <td class="yes">✓</td>
+                        </tr>
+
+                        <tr>
+                            <td>Assigned Level Materials</td>
+                            <td class="yes">✓</td>
+                            <td class="yes">✓</td>
+                            <td class="yes">✓</td>
+                        </tr>
+
+                        <tr>
+                            <td>Progress Tracking</td>
+                            <td class="yes">✓</td>
+                            <td class="yes">✓</td>
+                            <td class="yes">✓</td>
+                        </tr>
+
+                        <tr>
+                            <td>AI Python Assistant</td>
+                            <td class="no">✕</td>
+                            <td class="yes">✓</td>
+                            <td class="yes">✓</td>
+                        </tr>
+
+                        <tr>
+                            <td>Instructor Messaging</td>
+                            <td class="no">✕</td>
+                            <td class="yes">✓</td>
+                            <td class="yes">✓</td>
+                        </tr>
+
+                        <tr>
+                            <td>Additional Class Booking</td>
+                            <td class="no">✕</td>
+                            <td class="no">✕</td>
+                            <td class="yes">✓</td>
+                        </tr>
+
+                        <tr>
+                            <td>Priority Event Registration</td>
+                            <td class="no">✕</td>
+                            <td class="no">✕</td>
+                            <td class="yes">✓</td>
+                        </tr>
+
+                        <tr>
+                            <td>Certificate Eligibility</td>
+                            <td class="no">✕</td>
+                            <td class="no">✕</td>
+                            <td class="yes">✓</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </details>
+
     </section>
 
 </asp:Content>
