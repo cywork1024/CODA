@@ -2,43 +2,69 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <main>
-        <section class="row" aria-labelledby="aspnetTitle">
-            <h1 id="aspnetTitle">ASP.NET</h1>
-            <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-            <p><a href="http://www.asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
-        </section>
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Learn Python with CODA</h1>
+            <p>
+                A structured Python learning platform designed for students to learn,
+                practise, track progress, and receive instructor support.
+            </p>
 
-        <div class="row">
-            <section class="col-md-4" aria-labelledby="gettingStartedTitle">
-                <h2 id="gettingStartedTitle">Getting started</h2>
-                <p>
-                    ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-                A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-                </p>
-            </section>
-            <section class="col-md-4" aria-labelledby="librariesTitle">
-                <h2 id="librariesTitle">Get more libraries</h2>
-                <p>
-                    NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
-                </p>
-            </section>
-            <section class="col-md-4" aria-labelledby="hostingTitle">
-                <h2 id="hostingTitle">Web Hosting</h2>
-                <p>
-                    You can easily find a web hosting company that offers the right mix of features and price for your applications.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
-                </p>
-            </section>
+            <div class="hero-buttons">
+                <a href="/Account/RegisterStudent.aspx" class="btn-main">Get Started</a>
+                <a href="/Public/Courses.aspx" class="btn-secondary">View Courses</a>
+            </div>
         </div>
-    </main>
+    </section>
+
+    <section class="section">
+        <h2>Python Learning Rankings</h2>
+
+        <div class="card-grid">
+            <div class="info-card">
+                <h3>LV1 Rookie</h3>
+                <p>Introduction to Python, variables, data types, operators, input and output.</p>
+            </div>
+
+            <div class="info-card">
+                <h3>LV2 Intermediate</h3>
+                <p>Loops, functions, lists, tuples, dictionaries, sets, and string manipulation.</p>
+            </div>
+
+            <div class="info-card">
+                <h3>LV3 Advanced</h3>
+                <p>File handling, exception handling, modules, packages, and OOP basics.</p>
+            </div>
+
+            <div class="info-card">
+                <h3>LV4 Master</h3>
+                <p>Advanced OOP, database integration, API integration, web basics, and final project.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Subscription Plans</h2>
+
+        <div class="card-grid plans-grid">
+            <div class="price-card">
+                <h3>Basic</h3>
+                <h2>RM19/month</h2>
+                <p>Access assigned level materials, quizzes, assignments, and progress tracking.</p>
+            </div>
+
+            <div class="price-card">
+                <h3>Standard</h3>
+                <h2>RM29/month</h2>
+                <p>Includes previous completed levels and instructor messaging.</p>
+            </div>
+
+            <div class="price-card">
+                <h3>Premium</h3>
+                <h2>RM49/month</h2>
+                <p>Includes all features, class booking, priority events, and certificate eligibility.</p>
+            </div>
+        </div>
+    </section>
 
 </asp:Content>
