@@ -65,6 +65,64 @@
         </div>
     </section>
 
+    <section class="section how-section">
+
+        <div class="section-heading">
+            <span class="section-tag">How CODA Works</span>
+
+            <h2>Your Python Learning Journey</h2>
+
+            <p>
+                CODA guides students from registration to certification through
+                subscription selection, placement testing, structured learning,
+                and progress tracking.
+            </p>
+        </div>
+
+        <div class="journey-container">
+
+            <div class="journey-step">
+                <div class="step-circle">1</div>
+                <h3>Create Account</h3>
+                <p>Register as a student and create your CODA learning profile.</p>
+            </div>
+
+            <div class="journey-arrow">→</div>
+
+            <div class="journey-step">
+                <div class="step-circle">2</div>
+                <h3>Choose Plan</h3>
+                <p>Select a subscription plan that matches your learning needs.</p>
+            </div>
+
+            <div class="journey-arrow">→</div>
+
+            <div class="journey-step">
+                <div class="step-circle">3</div>
+                <h3>Placement Test</h3>
+                <p>Complete the Python test to identify your current skill level.</p>
+            </div>
+
+            <div class="journey-arrow">→</div>
+
+            <div class="journey-step">
+                <div class="step-circle">4</div>
+                <h3>Start Learning</h3>
+                <p>Access topics, notes, quizzes, assignments, and learning support.</p>
+            </div>
+
+            <div class="journey-arrow">→</div>
+
+            <div class="journey-step">
+                <div class="step-circle">5</div>
+                <h3>Earn Certificate</h3>
+                <p>Complete LV4 Master requirements and receive your certificate.</p>
+            </div>
+
+        </div>
+
+    </section>
+
     <section class="section">
         <h2>Python Learning Rankings</h2>
 

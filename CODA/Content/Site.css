@@ -700,6 +700,87 @@ body {
 }
 
 /* =======================
+    Home Page - How CODA Works Section
+==========================  */
+
+.how-section {
+    background: radial-gradient( circle at 90% 20%, rgba(168, 85, 247, 0.15), transparent 30% ), var(--bg-dark);
+}
+
+/* Journey cards container */
+.journey-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Individual Journey Step Card */
+.journey-step {
+    width: 230px;
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: var(--bg-card);
+    border: 1px solid var(--border-glow);
+    border-radius: 22px;
+    padding: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 25px rgba(124, 58, 237, 0.15);
+}
+
+/* Journey Card Hover Effect */
+.journey-step:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 35px rgba(96, 165, 250, 0.35);
+}
+
+/* Number Circle */
+.step-circle {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 900;
+    color: white;
+    background: linear-gradient(135deg, var(--purple), var(--blue));
+    box-shadow: 0 0 22px rgba(139, 92, 246, 0.55);
+}
+
+/* Number Circle Hover Glow */
+.journey-step:hover .step-circle {
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.6), 0 0 30px rgba(37, 99, 235, 0.4);
+}
+
+/* Step Title */
+.journey-step h3 {
+    color: var(--purple-light);
+    margin-bottom: 15px;
+    min-height: 60px;
+}
+
+/* Step Description */
+.journey-step p {
+    color: var(--text-muted);
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+/* Arrow Between Steps */
+.journey-arrow {
+    font-size: 32px;
+    color: var(--blue-light);
+    font-weight: 800;
+}
+
+/* =======================
     Home Page - Footer Section
 ========================== */
 footer {
@@ -787,5 +868,13 @@ textarea {
 
     .price-card.featured:hover {
         transform: translateY(-6px);
+    }
+
+    .journey-container {
+        flex-direction: column;
+    }
+
+    .journey-arrow {
+        transform: rotate(90deg);
     }
 }
