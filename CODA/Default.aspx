@@ -377,4 +377,82 @@
 
     </section>
 
+    <section class="section certificate-section">
+
+        <div class="section-heading">
+            <span class="section-tag">Certificates & Achievements</span>
+
+            <h2>Earn Recognition For Your Progress</h2>
+
+            <p>
+                Students who successfully complete the CODA learning pathway
+                will receive certificates and achievement rewards.
+            </p>
+        </div>
+
+        <div class="achievement-grid">
+
+            <div class="achievement-card">
+
+                <div class="achievement-icon">🏆</div>
+
+                <h3>Master Level Certificate</h3>
+
+                <p>
+                    Complete LV4 Master and pass the final assessment
+                    to become eligible for certification.
+                </p>
+
+            </div>
+
+            <div class="achievement-card">
+
+                <div class="achievement-icon">🎖️</div>
+
+                <h3>Learning Achievements</h3>
+
+                <p>
+                    Unlock achievements as you progress through
+                    Rookie, Intermediate, Advanced and Master levels.
+                </p>
+
+            </div>
+
+            <div class="achievement-card">
+
+                <div class="achievement-icon">📜</div>
+
+                <h3>Certificate Preview Coming Soon</h3>
+
+                <p>
+                    Certificate design and verification features
+                    will be available in future updates.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section final-cta-section">
+
+        <div class="final-cta-box">
+
+            <h2>Ready to Start Your Python Journey?</h2>
+
+            <p>
+                Join CODA today and begin learning Python through structured lessons,
+                practical exercises, progress tracking, AI assistance, and instructor support.
+            </p>
+
+            <div class="hero-buttons final-cta-buttons">
+                <a href="/Account/Register.aspx" class="btn-main">Get Started</a>
+                <a href="/Public/Courses.aspx" class="btn-secondary">Explore Courses</a>
+            </div>
+
+        </div>
+
+    </section>
+
 </asp:Content>

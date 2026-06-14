@@ -937,6 +937,89 @@ body {
 }
 
 /* =======================
+    Home Page - Certificates Section
+========================== */
+
+.certificate-section {
+    background: radial-gradient( circle at 50% 20%, rgba(245, 158, 11, 0.12), transparent 30% ), var(--bg-dark);
+}
+
+.achievement-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.achievement-card {
+    background: var(--bg-card);
+    border: 1px solid rgba(245, 158, 11, 0.35);
+    border-radius: 22px;
+    padding: 32px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 30px rgba(245, 158, 11, 0.15);
+}
+
+.achievement-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 12px rgba(245, 158, 11, 0.4), 0 0 25px rgba(245, 158, 11, 0.3), 0 0 40px rgba(245, 158, 11, 0.2);
+}
+
+.achievement-icon {
+    font-size: 52px;
+    margin-bottom: 18px;
+}
+
+.achievement-card h3 {
+    color: #fbbf24;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.achievement-card p {
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+/* =======================
+    Home Page - Final CTA Section
+========================== */
+
+.final-cta-section {
+    background: radial-gradient( circle at 50% 50%, rgba(139, 92, 246, 0.22), transparent 35% ), linear-gradient( 135deg, #050510, #10001d, #050510 );
+}
+
+.final-cta-box {
+    max-width: 950px;
+    margin: 0 auto;
+    text-align: center;
+    background: rgba(18, 18, 35, 0.92);
+    border: 1px solid var(--border-glow);
+    border-radius: 28px;
+    padding: 70px 50px;
+    box-shadow: 0 0 45px rgba(168, 85, 247, 0.28);
+}
+
+.final-cta-box h2 {
+    font-size: 44px;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 22px;
+}
+
+.final-cta-box p {
+    color: var(--text-muted);
+    font-size: 20px;
+    line-height: 1.7;
+    max-width: 780px;
+    margin: 0 auto 32px auto;
+}
+
+.final-cta-buttons {
+    justify-content: center;
+}
+
+/* =======================
     Home Page - Footer Section
 ========================== */
 footer {
@@ -1039,6 +1122,10 @@ textarea {
     }
 
     .event-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .achievement-grid {
         grid-template-columns: 1fr;
     }
 }
