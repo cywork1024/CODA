@@ -122,7 +122,11 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Images\Advanced.png" />
+    <Content Include="Images\Intermediate.png" />
     <Content Include="Images\logo.png" />
+    <Content Include="Images\Master.png" />
+    <Content Include="Images\Rookie.png" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />

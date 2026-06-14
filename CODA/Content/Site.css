@@ -256,6 +256,85 @@ body {
 }
 
 /*  =======================
+    Home Page - Why Choose CODA Section
+    =======================  */
+.why-section {
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(37, 99, 235, 0.18),
+            transparent 25%
+        ),
+        var(--bg-dark);
+}
+
+/* Section Heading Container */
+.section-heading {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 50px auto;
+}
+
+/* Small label above heading */
+.section-tag {
+    display: inline-block;
+    color: var(--blue-light);
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+/* Section description */
+.section-heading p {
+    color: var(--text-muted);
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+/* Feature card grid */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+}
+
+/* Feature cards */
+.feature-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-glow);
+    padding: 32px;
+    border-radius: 24px;
+    box-shadow: 0 0 30px rgba(124, 58, 237, 0.16);
+}
+
+/* Feature icon */
+.feature-icon {
+    font-size: 42px;
+    margin-bottom: 18px;
+}
+
+/* Feature title */
+.feature-card h3 {
+    color: var(--purple-light);
+    font-size: 23px;
+    font-weight: 800;
+}
+
+/* Feature paragraph */
+.feature-card p {
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+/* Feature hover effect */
+.feature-card:hover {
+    transform: translateY(-6px);
+    transition: 0.3s ease;
+    box-shadow: 0 0 42px rgba(96, 165, 250, 0.35);
+}
+
+/*  =======================
     Shared Section Styling
     =======================  */
 
@@ -291,6 +370,33 @@ body {
 }
 
 /*  =======================
+    Python Level Rank Cards
+    =======================  */
+
+.level-card {
+    text-align: center;
+}
+
+/* Rank Image */
+.rank-logo {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    transition: 0.3s ease;
+}
+
+/* Rank Hover Animation */
+.level-card:hover .rank-logo {
+    transform: scale(1.08);
+}
+
+/* Rank Title */
+.level-card h3 {
+    margin-top: 10px;
+}
+
+/*  =======================
     Home Page - Cards
     =======================  */
 
@@ -310,15 +416,70 @@ body {
     color: #e5e7eb;
 }
 
+.level-card:nth-child(1) {
+    border: 1px solid #9ca3af;
+}
+
+.level-card:nth-child(2) {
+    border: 1px solid #60a5fa;
+}
+
+.level-card:nth-child(3) {
+    border: 1px solid #a855f7;
+}
+
+.level-card:nth-child(4) {
+    border: 1px solid #f59e0b;
+}
+
 /* Card Hover Animation */
 .info-card:hover,
 .price-card:hover {
+    transition: all 0.3s ease;
+}
+
+/* Rookie Hover Glow Effect */
+.level-card:nth-child(1):hover {
     transform: translateY(-6px);
+    box-shadow: 0 0 12px rgba(156, 163, 175, 0.4), 0 0 25px rgba(156, 163, 175, 0.3), 0 0 40px rgba(156, 163, 175, 0.2);
+}
 
-    transition: 0.3s ease;
+/* Intermediate Hover Glow Effect */
+.level-card:nth-child(2):hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 12px rgba(96, 165, 250, 0.5), 0 0 25px rgba(96, 165, 250, 0.4), 0 0 45px rgba(96, 165, 250, 0.3);
+}
 
-    box-shadow:
-        0 0 42px rgba(168, 85, 247, 0.45);
+/* Advanced Hover Glow Effect */
+.level-card:nth-child(3):hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 12px rgba(168, 85, 247, 0.5), 0 0 25px rgba(168, 85, 247, 0.4), 0 0 45px rgba(168, 85, 247, 0.3);
+}
+
+/* Master Hover Glow Effect */
+.level-card:nth-child(4):hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 12px rgba(245, 158, 11, 0.5), 0 0 25px rgba(245, 158, 11, 0.4), 0 0 45px rgba(245, 158, 11, 0.3);
+}
+
+/* Rookie Logo Glow Effect */
+.level-card:nth-child(1):hover .rank-logo {
+    filter: drop-shadow(0 0 12px #9ca3af);
+}
+
+/* Intermediate Logo Glow Effect */
+.level-card:nth-child(2):hover .rank-logo {
+    filter: drop-shadow(0 0 12px #60a5fa);
+}
+
+/* Advanced Logo Glow Effect */
+.level-card:nth-child(3):hover .rank-logo {
+    filter: drop-shadow(0 0 12px #a855f7);
+}
+
+/* Master Logo Glow Effect */
+.level-card:nth-child(4):hover .rank-logo {
+    filter: drop-shadow(0 0 12px #f59e0b);
 }
 
 /* Card Titles */
@@ -336,9 +497,6 @@ body {
     font-size: 30px;
 }
 
-/*  =======================
-    Home Page - Subscription Section
-    =======================  */
 .plans-grid {
     grid-template-columns: repeat(3, 1fr);
 }
@@ -403,7 +561,8 @@ textarea {
     }
 
     .card-grid,
-    .plans-grid {
+    .plans-grid,
+    .feature-grid {
         grid-template-columns: 1fr;
     }
 

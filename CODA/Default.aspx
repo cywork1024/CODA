@@ -17,26 +17,78 @@
         </div>
     </section>
 
+    <section class="section why-section">
+        <div class="section-heading">
+            <span class="section-tag">Why Choose CODA?</span>
+            <h2>Designed for Practical Python Learning</h2>
+            <p>
+                CODA combines structure lessons, hands-on practice, AI support,
+                and instructor guidance to help students learn Python more effectively.
+            </p>
+        </div>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">📘</div>
+                <h3>Structured Learning Path</h3>
+                <p>Learn Python step by step, improving Python coding skills
+                    and break through beginner, intermediate, advanced and master levels.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <h3>AI Python Assistant</h3>
+                <p>
+                    Ask Python-related questions, understand syntax, and receive
+                    help with basic debugging.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">👨‍🏫</div>
+                <h3>Instructor Support</h3>
+                <p>
+                    Communicate with instructors, receive feedback, and request
+                    additional classes when needed.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📈</div>
+                <h3>Progress Tracking</h3>
+                <p>
+                    Track your course completion, assessment results, learning
+                    strengths, and improvement areas.
+                </p>
+            </div>
+        </div>
+    </section>
+
     <section class="section">
         <h2>Python Learning Rankings</h2>
 
         <div class="card-grid">
-            <div class="info-card">
+            <div class="info-card level-card">
+                <img src="<%= ResolveUrl("~/Images/Rookie.png") %>" alt="Rookie Rank" class="rank-logo" />
                 <h3>LV1 Rookie</h3>
                 <p>Introduction to Python, variables, data types, operators, input and output.</p>
             </div>
 
-            <div class="info-card">
+            <div class="info-card level-card">
+                <img src="<%= ResolveUrl("~/Images/Intermediate.png") %>" alt="Intermediate Rank" class="rank-logo" />
                 <h3>LV2 Intermediate</h3>
                 <p>Loops, functions, lists, tuples, dictionaries, sets, and string manipulation.</p>
             </div>
 
-            <div class="info-card">
+            <div class="info-card level-card">
+                <img src="<%= ResolveUrl("~/Images/Advanced.png") %>" alt="Advanced Rank" class="rank-logo" />
                 <h3>LV3 Advanced</h3>
                 <p>File handling, exception handling, modules, packages, and OOP basics.</p>
             </div>
 
-            <div class="info-card">
+            <div class="info-card level-card">
+                <img src="<%= ResolveUrl("~/Images/Master.png") %>" alt="Master Rank" class="rank-logo" />
                 <h3>LV4 Master</h3>
                 <p>Advanced OOP, database integration, API integration, web basics, and final project.</p>
             </div>
